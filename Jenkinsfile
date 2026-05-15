@@ -58,7 +58,7 @@ pipeline {
             steps {
 
                 sh 'docker rm -f notes-app-container || true'
-
+                echo "solve the error"
                 sh 'docker run -d -p 8000:8000 --name notes-app-container notes-app:latest'
             }
         }
